@@ -1,0 +1,57 @@
+.container {
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.header {
+    font-weight: 400;
+    height: 70px;
+    background-color: #424242;
+    color: white;
+    &__main {
+        display: flex;
+        align-items: center;
+        height: 70px;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        img {
+            width: 10px;
+            height: 10px;
+        }
+    }
+    &__menu {
+        flex: 1.15;
+    }
+    &__tools {
+        display: flex;
+        align-items: center;
+        flex-basis: 300px;
+        justify-content: right;
+    }
+
+    &__transparent {
+        background-color: transparent;
+        position: relative;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    &__list {
+        display: flex;
+        list-style-type: none;
+    }
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 22px;
+    &:visited {
+        color: white;
+    }
+}

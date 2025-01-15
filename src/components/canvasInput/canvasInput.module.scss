@@ -1,0 +1,17 @@
+.canvas {
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    &__column {
+        width: 70px;
+        height: 80px;
+        border: 1px solid white;
+        background-color: transparent;
+    }
+}
+
+.column {
+    &__active {
+        background-color: white;
+    }
+}

@@ -1,0 +1,28 @@
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.profile {
+    margin-top: 60px;
+}
+
+.progress {
+    margin-top: 75px;
+    margin-bottom: 85px;
+    &__title {
+        font-size: 36px;
+        font-weight: 400;
+    }
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 65px;
+    }
+    &__element {
+        margin-right: 50px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}

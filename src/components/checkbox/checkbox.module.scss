@@ -1,0 +1,31 @@
+.checkbox{
+    display: flex;
+    margin-top: 15px;
+    &__input{
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        & + .checkbox__text{
+            display: inline-flex;
+            user-select: none;
+            &::before{
+                content: " ";
+                width: 1em;
+                height: 1em;
+                margin-right: 10px;
+                display: inline-block;
+                border: 2px solid #727272;
+                border-radius: 5px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 70% 70%;
+            }
+        }
+        &:checked+.checkbox__text::before{
+            border-color: white;
+            background-color: white;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA4IDgnPjxwYXRoIGZpbGw9JyM0MjQyNDInIGQ9J002LjU2NC43NWwtMy41OSAzLjYxMi0xLjUzOC0xLjU1TDAgNC4yNiAyLjk3NCA3LjI1IDggMi4xOTN6Jy8+PC9zdmc+");
+            fill: #727272;
+        }
+    }
+}

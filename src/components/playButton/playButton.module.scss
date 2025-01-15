@@ -1,0 +1,26 @@
+.playButton {
+    background-color: white;
+    border-radius: 50px;
+    padding: 15px 15px 12px 15px;
+    cursor: pointer;
+    &:hover {
+        border: 2px solid white;
+        background-color: transparent;
+        & svg {
+            fill: white;
+        }
+    }
+    & svg {
+        width: 24px;
+        height: 24px;
+    }
+    &:disabled,
+    &[disabled] {
+        border: none;
+        background-color: rgb(129, 129, 129);
+        cursor: default;
+        svg {
+            fill: rgb(46, 46, 46);
+        }
+    }
+}

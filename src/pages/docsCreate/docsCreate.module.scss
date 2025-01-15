@@ -1,0 +1,30 @@
+.create {
+    max-width: 800px;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.back{
+    font-size: 15px;
+}
+
+.title {
+    font-size: 32px;
+    margin-top: 40px;
+}
+
+.inputs {
+    margin-top: 55px;
+}
+
+.controller{
+    margin-top: 25px;
+    text-align: right;
+    &__publish{
+        font-size: 15px;
+    }
+    &__back{ 
+        font-size: 15px;
+        margin-right: 20px;
+    }
+}

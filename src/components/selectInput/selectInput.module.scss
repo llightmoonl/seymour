@@ -1,0 +1,96 @@
+.selectInput {
+    position: relative;
+    transition: transform 0.2s ease-out margin-top 0.2s ease-out;
+    margin-top: 25px;
+
+    & input {
+        font-size: 16px;
+        color: white;
+        background-color: transparent;
+        border: none;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid white;
+        padding: 12px 0px;
+        outline: none;
+
+        &:not([value=""])+.title {
+            transform: translate(0, -130%);
+            color: white;
+        }
+
+        &:focus {
+            border-bottom: 1px solid #727272;
+            transition: transform 2s ease-out;
+            &+.title {
+                transform: translate(0, -130%);
+                color: white;
+            }
+            & ~ .selectInput__arrow{
+                transition: transform 0.3s ease-out;
+                transform: rotate(180deg);
+            }
+        }
+    }   
+
+    &:first-of-type {
+        margin-top: 0;
+    }
+
+    &:has(input:focus) {
+        margin-top: 40px;
+    }
+
+    &:has(input:not(:placeholder-shown)) {
+        margin-top: 40px;
+    }
+    &__arrow{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        fill: white;
+        top: 15px;
+        right: 0;
+    }
+}
+
+.title {
+    position: absolute;
+    z-index: -200;
+    color: #727272;
+    top: 13px;
+    transition: transform 0.2s ease-out, font-size 0.2s ease-out, background-color 0.2s ease-out, color 0.2s ease-out;
+
+    &__error {
+        transform: translate(0, -130%);
+    }
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.select{
+    list-style-type: none;
+    position: absolute;
+    top: 46px;
+    width: 100%;    
+    overflow-y: auto;
+    z-index: 101;
+    scrollbar-color: rgb(62, 62, 62) rgb(48, 48, 48);
+    scroll-behavior: smooth;
+    border-radius: 15px;
+    padding: 10px 0px;
+    background-color: #424242;
+
+    &__element{
+        padding: 10px 25px;
+        background-color: #424242;
+        cursor: pointer;
+        &:hover{
+            background-color: #6f6f6f;
+        }
+    }
+}

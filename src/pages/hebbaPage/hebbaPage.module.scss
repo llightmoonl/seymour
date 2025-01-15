@@ -1,0 +1,82 @@
+.hebba {
+    margin-top: 20px;
+    margin-left: 20px;
+    &__title {
+        margin-top: 20px;
+    }
+    &__top {
+        margin-top: 30px;
+        display: flex;
+    }
+    &__bottom {
+        margin-top: 50px;
+    }
+    &__matrix {
+        padding-right: 30px;
+    }
+    &__element {
+        height: 100%;
+        margin-right: 20px;
+        flex-shrink: 1;
+        &Column {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__controllers {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__parity {
+        display: flex;
+    }
+    &__buttonParity {
+        padding: 14px 23px;
+        border-radius: 25px;
+        margin-right: 5px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+    &__buttonRecognition {
+        margin-top: 30px;
+        width: 100%;
+    }
+    &__buttonEnd {
+        margin-top: 10px;
+        width: 100%;
+    }
+    &__buttonPlay {
+        display: flex;
+    }
+    &__table {
+        width: 204px;
+        height: 405px;
+        overflow-y: auto;
+        scrollbar-gutter: auto;
+        scrollbar-width: thin;
+        scrollbar-color: rgb(203, 203, 203) rgb(48, 48, 48);
+        scroll-behavior: smooth;
+    }
+    &__information {
+        width: 350px;
+        flex-basis: 350px;
+    }
+}
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.value {
+    &__result {
+        margin-top: 20px;
+    }
+}
+
+.button {
+    &__play {
+        padding: 15px 15px 13px;
+    }
+}

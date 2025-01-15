@@ -1,0 +1,31 @@
+.menu {
+    display: flex;
+    user-select: none;
+    &__element {
+        margin-right: 45px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 3px;
+            &:visited {
+                color: white;
+            }
+
+            &:hover {
+                border-bottom: 1px solid white;
+            }
+        }
+
+        &__active {
+            a {
+                border-bottom: 1px solid white;
+                &:visited {
+                    background-color: #ffffff;
+                }
+            }
+        }
+    }
+}

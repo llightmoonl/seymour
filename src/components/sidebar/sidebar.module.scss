@@ -1,0 +1,43 @@
+.sidebar {
+    max-width: 350px;
+    width: 100%;
+    position: sticky;
+    display: block;
+    top: 0;
+    margin: -20px 0;
+    &__groups {
+        margin: 20px 0;
+        max-height: 81vh;
+        padding-right: 10px;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scroll-margin-bottom: 10px;
+        scrollbar-color: rgb(203, 203, 203) rgb(48, 48, 48);
+        scroll-behavior: smooth;
+    }
+
+    &__add {
+        margin-top: 10px;
+        display: flex;
+        font-size: 14px;
+        justify-content: center;
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #727272;
+            svg {
+                fill: #727272;
+                height: 12px;
+                width: 12px;
+                margin-right: 5px;
+            }
+            &:hover {
+                color: #aaaaaa;
+                & svg {
+                    fill: #aaaaaa;
+                }
+            }
+        }
+    }
+}

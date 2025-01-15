@@ -1,0 +1,25 @@
+.sets {
+    display: flex;
+    flex-wrap: wrap;
+    &__element {
+        border-collapse: collapse;
+        margin-right: 40px;
+        margin-top: 20px;
+        :nth-child(4) {
+            margin-right: 0;
+        }
+        &__active {
+            cursor: pointer;
+        }
+    }
+
+    &__column {
+        width: 70px;
+        height: 70px;
+        border: 1px solid white;
+        background-color: transparent;
+    }
+    &__active {
+        background-color: white;
+    }
+}

@@ -1,0 +1,43 @@
+@import url("./fonts.scss");
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #303030;
+    color: white;
+}
+
+.mdxeditor {
+    color: white;
+    &-toolbar {
+        background-color: #303030;
+        border-radius: 0;
+    }
+    &-root-contenteditable {
+        color: white;
+        width: 100%;
+        --baseTextContrast: white;
+
+        & div {
+            --baseSolid: #727272;
+            border: 1px solid white;
+            border-radius: 3px;
+            min-height: 400px;
+        }
+    }
+    &-select-content {
+        background-color: #303030;
+    }
+    &-popup-container {
+        color: white;
+        background-color: #303030;
+        --basePageBg: #303030;
+        --baseBase: color;
+        --baseBorder: white;
+        --baseSolid: white;
+    }
+}

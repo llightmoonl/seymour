@@ -1,0 +1,9 @@
+.profileHeader{
+    position: relative;
+    &__menu{
+        position: absolute;
+        top: 57px;
+        bottom: 0;
+        right: 13px;
+    }
+}

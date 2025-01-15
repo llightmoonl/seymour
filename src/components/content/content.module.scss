@@ -1,0 +1,51 @@
+.content {
+    margin-top: 1.5px;
+    margin-left: 30px;
+    width: 100%;
+    max-width: 900px;
+    text-align: justify;
+    &__title {
+        margin-top: 40px;
+    }
+    &__category {
+        a {
+            color: white;
+        }
+    }
+    &__main {
+        white-space: pre-wrap;
+        max-width: 800px;
+        word-wrap: break-word;
+        font-size: 18px;
+        margin-top: 20px;
+        & p {
+            margin-top: 20px;
+        }
+    }
+    &__text {
+        margin-top: 20px;
+        & p {
+            margin-top: 20px;
+        }
+        & img {
+            display: flex;
+            justify-content: center;
+        }
+        & h1,
+        h2 {
+            margin-top: 20px;
+        }
+    }
+    &__edit {
+        margin-top: 20px;
+    }
+}
+
+.category {
+    &__link {
+        text-decoration: none;
+        &::after {
+            content: "";
+        }
+    }
+}

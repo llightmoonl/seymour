@@ -1,0 +1,62 @@
+.input {
+    position: relative;
+    & input {
+        padding: 0 1px;
+        font-size: 16px;
+        color: white;
+        background-color: transparent;
+        border: none;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid white;
+        padding: 12px 0px;
+        outline: none;
+        &:not(:placeholder-shown)+.title {
+            transform: translate(0, -135%);
+            color: white;
+        }
+
+        &:focus {
+            border-bottom: 1px solid #727272;
+
+            &+.title {
+                transform: translate(0, -130%);
+                color: white;
+            }
+        }
+    }
+
+    transition: margin-top 0.2s ease-out;
+    margin-top: 25px;
+
+    &:first-of-type {
+        margin-top: 0;
+    }
+
+    &:has(input:focus) {
+        margin-top: 40px;
+    }
+
+    &:has(input:not(:placeholder-shown)) {
+        margin-top: 40px;
+    }
+}
+
+.title {
+    position: absolute;
+    color: #727272;
+    pointer-events: none;
+    top: 13px;
+    transition: transform 0.2s ease-out, font-size 0.2s ease-out, background-color 0.2s ease-out, color 0.2s ease-out;
+
+    &__error {
+        transform: translate(0, -130%);
+    }
+}
+
+.error{
+    color: red;
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: left;
+}

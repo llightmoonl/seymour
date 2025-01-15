@@ -1,0 +1,41 @@
+.profileMenu{
+    width: 300px;
+    &__content{
+        background-color: #424242;
+        border-radius: 10px;
+        padding-bottom: 10px;
+    }
+    &__information{
+        display: flex;
+        align-items: center;
+        padding: 10px 20px 15px 20px;
+        border-bottom: 1px solid rgba(166,166,166,0.4);
+        border-radius: 10px 10px 0px 0px;
+        cursor: pointer;
+        &:hover{
+            background-color: #575757;
+        }
+    }
+    &__profile{
+        margin-left: 10px;
+    }
+    &__nickname{
+        font-size: 14px;
+        color: #a6a6a6;
+    }
+    &__controllers{
+        margin-top: 7px;
+    }
+}
+
+.controllers{
+    &__item{
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        &:hover{
+            background-color: #575757;
+        }
+    }
+}
